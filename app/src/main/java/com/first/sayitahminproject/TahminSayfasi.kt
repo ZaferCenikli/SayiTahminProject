@@ -15,37 +15,37 @@ class TahminSayfasi : AppCompatActivity() {
         println("Rasgele sayi:${randomsayi}")
         var KalanHak=(5)
 
-     buttonTahmin.setOnClickListener {
-         var alinanTahmin=editTextTextPersonName.text.toString().toInt()
+        buttonTahmin.setOnClickListener {
+            var alinanTahmin=editTextTextPersonName.text.toString().toInt()
 
-          if(alinanTahmin!=randomsayi){
-              if(alinanTahmin>randomsayi){
-                  textViewTahmin.text="Azalt"
-              }else{
-                  textViewTahmin.text="Arttır"
-              }
+            if(alinanTahmin!=randomsayi){
+                if(alinanTahmin>randomsayi){
+                    textViewTahmin.text="Azalt"
+                }else{
+                    textViewTahmin.text="Arttır"
+                }
 
 
 
-              KalanHak = KalanHak - 1
-              textView2.text="KALAN HAK:${KalanHak}"
-              if(KalanHak==0){
+                KalanHak = KalanHak - 1
+                textView2.text="KALAN HAK:${KalanHak}"
+                if(KalanHak==0){
 
-                  val SayfaGecisTahmin=Intent(this@TahminSayfasi,SonucSayfasi::class.java)
-                  SayfaGecisTahmin.putExtra("Sonuç",false)
-                  SayfaGecisTahmin.putExtra("randomSayi",(randomsayi))
-                  finish()
-                  startActivity(SayfaGecisTahmin)
+                    val SayfaGecisTahmin=Intent(this@TahminSayfasi,SonucSayfasi::class.java)
+                    SayfaGecisTahmin.putExtra("Sonuç",false)
+                    SayfaGecisTahmin.putExtra("randomSayi",(randomsayi))
+                    finish()
+                    startActivity(SayfaGecisTahmin)
 
-              }
+                }
 
-           }else{
-               val SayfaGecisTahmin=Intent(this@TahminSayfasi,SonucSayfasi::class.java)
-              SayfaGecisTahmin.putExtra("Sonuc",true)
-              finish()
-               startActivity(SayfaGecisTahmin)
-           }
+            }else{
+                val SayfaGecisTahmin=Intent(this@TahminSayfasi,SonucSayfasi::class.java)
+                SayfaGecisTahmin.putExtra("Sonuc",true)
+                finish()
+                startActivity(SayfaGecisTahmin)
+            }
 
-       }
+        }
     }
 }
