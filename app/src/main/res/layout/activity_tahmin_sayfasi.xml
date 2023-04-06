@@ -43,7 +43,7 @@
         android:layout_width="268dp"
         android:layout_height="70dp"
         android:ems="10"
-        android:hint="SAYI GİRİNİZ"
+        android:hint="0-10 ARASINDA BİRI GİRİNİZ"
         android:inputType="number"
         android:isScrollContainer="false"
         android:keepScreenOn="false"

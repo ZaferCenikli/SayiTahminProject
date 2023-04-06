@@ -25,7 +25,7 @@ class SonucSayfasi : AppCompatActivity() {
 
 
         }else{
-            textViewKayip.text=("Doğru sayu : ${gelenRandomSayi} ")
+            textViewKayip.text=("Doğru sayı : ${gelenRandomSayi} ")
             imageViewSonuc.setImageResource(R.drawable.baseline_sentiment_very_dissatisfied_24)
             textViewSonuc.text="KAYBETTİNİZ"
 
