@@ -12,6 +12,12 @@
         android:theme="@style/Theme.SayiTahminProject"
         tools:targetApi="31">
         <activity
+            android:name=".SonucSayfasi"
+            android:exported="false" />
+        <activity
+            android:name=".TahminSayfasi"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
