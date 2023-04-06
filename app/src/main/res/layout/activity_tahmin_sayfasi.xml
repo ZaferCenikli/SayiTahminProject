@@ -28,13 +28,12 @@
         android:layout_width="153dp"
         android:layout_height="0dp"
         android:layout_marginBottom="309dp"
-        android:text="TextView"
         android:textAlignment="center"
         android:textColor="#C60B0B"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTahmin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -49,7 +48,7 @@
         android:isScrollContainer="false"
         android:keepScreenOn="false"
         android:shadowColor="#ED0909"
-        android:textAlignment="center"
+        android:textAlignment="gravity"
         android:textColor="#150707"
         android:textColorHighlight="#D14B4B"
         android:textColorHint="#EA1717"
@@ -62,7 +61,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonTahmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="138dp"

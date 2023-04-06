@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageViewSonuc"
-        android:layout_width="253dp"
-        android:layout_height="252dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="295dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="37dp"
         android:layout_marginBottom="54dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewSonuc"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,25 +21,38 @@
     <TextView
         android:id="@+id/textViewSonuc"
         android:layout_width="199dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="75dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#C60B0B"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSonuc"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKayip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewSonuc" />
 
     <Button
         android:id="@+id/buttonSonuc"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="130dp"
+        android:layout_width="205dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="119dp"
         android:text="Tekrar Oyna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKayip" />
+
+    <TextView
+        android:id="@+id/textViewKayip"
+        android:layout_width="307dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="#C60B0B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSonuc"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSonuc"
+        app:layout_constraintStart_toStartOf="@+id/buttonSonuc"
         app:layout_constraintTop_toBottomOf="@+id/textViewSonuc" />
 </androidx.constraintlayout.widget.ConstraintLayout>
